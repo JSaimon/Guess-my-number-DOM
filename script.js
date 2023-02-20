@@ -8,22 +8,27 @@ let finished = false;
 function CheckGuess() {
   if (!finished) {
     const guessedNumber = document.getElementById("guessedNumber").value;
-    attempt++;
 
-    if (guessedNumber == misteryNumber) {
-      CheckRecord();
-      document.getElementById("resultNumber").innerHTML = misteryNumber;
-      document.getElementById("record").innerHTML = `Record: ${record}`;
-      document.getElementById("gameSpace").style.backgroundColor = "Green";
-      document.getElementById("infoMessage").innerHTML = "WINNER WINNER!";
-      finished = true;
-    } else if (guessedNumber > misteryNumber) {
-      document.getElementById("infoMessage").innerHTML = "Too high!";
+    if (guessedNumber != "") {
+      attempt++;
+
+      if (guessedNumber == misteryNumber) {
+        CheckRecord();
+        document.getElementById("resultNumber").innerHTML = misteryNumber;
+        document.getElementById("record").innerHTML = `Record: ${record}`;
+        document.getElementById("gameSpace").style.backgroundColor = "Green";
+        document.getElementById("infoMessage").innerHTML = "WINNER WINNER!";
+        finished = true;
+      } else if (guessedNumber > misteryNumber) {
+        document.getElementById("infoMessage").innerHTML = "Too high!";
+      } else {
+        document.getElementById("infoMessage").innerHTML = "Too low!";
+      }
+
+      document.getElementById("try").innerHTML = `Try: ${attempt}`;
     } else {
-      document.getElementById("infoMessage").innerHTML = "Too low!";
+      document.getElementById("infoMessage").innerHTML = "Select a number!";
     }
-
-    document.getElementById("try").innerHTML = `Try: ${attempt}`;
   }
 }
 
