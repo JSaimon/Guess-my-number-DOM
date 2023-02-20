@@ -1,6 +1,6 @@
 "use strict";
 
-let misteryNumber = Math.floor(Math.random() * 19) + 1;
+let misteryNumber = Math.floor(Math.random() * 20) + 1;
 let attempt = 0;
 let record = 0;
 let finished = false;
