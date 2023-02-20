@@ -1,0 +1,164 @@
+body {
+  background-color: #f3e5ab;
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+
+/* Board */
+
+.gameSpace {
+  width: 70%;
+  height: 70%;
+  background-color: #212729;
+  display: inline-block;
+  margin: 15%;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.againButton {
+  background-color: white;
+  display: block;
+  margin: 10px;
+  width: 18vw;
+  height: 5.5vh;
+  text-align: center;
+  font-size: 4vh;
+  border: none;
+  outline: none;
+}
+
+.againButton:active {
+  background-color: #212729;
+  color: white;
+  border: solid 1px white;
+}
+
+.againText {
+  color: #212729;
+  text-align: center;
+  font-size: 4vh;
+  margin: auto;
+  padding: 0.5vh;
+  vertical-align: middle;
+}
+
+.rulesContainer {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 1vh;
+}
+
+.rulesText {
+  color: white;
+}
+
+.infoGameText {
+  font-size: 2.5vh;
+}
+
+/* Title */
+
+.gameTitle {
+  font-size: 7vh;
+  text-align: center;
+}
+
+/* Result */
+
+.result {
+  display: block;
+  width: 15vh;
+  height: 10vh;
+  border: 1vh solid white;
+  margin: auto;
+  text-align: center;
+}
+
+#resultNumber {
+  color: white;
+  display: inline-block;
+  height: 10vh;
+  font-size: 9vh;
+  vertical-align: middle;
+}
+
+/* Main */
+
+.main {
+  height: 25vh;
+  margin-top: 8vh;
+  display: flex;
+}
+
+/* Guessing */
+
+.guessing {
+  width: 50%;
+}
+
+.guessedNumber {
+  height: 10vh;
+  width: 60%;
+  font-size: 9vh;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border: 0.4vh solid white;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+}
+
+.guessedNumber::-webkit-outer-spin-button,
+.guessedNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sendGuess {
+  height: 6vh;
+  width: 40%;
+  font-size: 3vh;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  margin-top: 1vh;
+  background-color: white;
+  color: #212729;
+  border: none;
+  outline: none;
+}
+
+.sendGuess:active {
+  background-color: #212729;
+  color: white;
+  border: solid 1px white;
+}
+
+/* Info */
+
+.info {
+  width: 50%;
+}
+
+.info label {
+  font-size: 2.5vh;
+}
+
+.score {
+  margin-top: 6vh;
+}
+
+.score label {
+  display: block;
+  margin-top: 1vh;
+}
